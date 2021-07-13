@@ -2,7 +2,6 @@ public class Array {
 
 
     public static void main(String[] args){
-        ArrayList<String> list = new ArrayList<>();
         System.out.println("Write number of tests");
         Scanner scanner = new Scanner(System.in);
         int T = Integer.parseInt(scanner.nextLine());
