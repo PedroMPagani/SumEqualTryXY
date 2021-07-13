@@ -6,9 +6,18 @@ import java.util.Scanner;
 public class Array {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         ArrayList<String> list = new ArrayList<>();
-        list.add("8001 2000 2001"); // SIM
+        System.out.println("Write number of tests");
+        Scanner scanner = new Scanner(System.in);
+        int T = Integer.parseInt(scanner.nextLine());
+        for (int i = 0; i < T; i++){
+            System.out.println("Reading line...");
+            String line = scanner.nextLine();
+            list.add(line);
+            System.out.println(line);
+        }
+        /*list.add("8001 2000 2001"); // SIM
         list.add("4003 2000 2001"); // NAO
         list.add("1000 3 7"); // SIM
         list.add("2000 1000 2001"); // SIM
@@ -18,7 +27,7 @@ public class Array {
         list.add("105000 5000 10000"); // SIM
         list.add("107500 2500 10000"); // SIM
         list.add("1050 2 3"); // SIM
-        list.add("10 9 3"); // NAO
+        list.add("10 9 3"); // NAO*/
         for (String line : list) {
             String[] xT = line.split(" ");
             int number = Integer.parseInt(xT[0]);
@@ -51,16 +60,6 @@ public class Array {
             //}
 
         }
-
-        /**
-         * 2.4  ExemplosEntrada
-         * 4
-         * 8001 2000 2001 -> SIM
-         * 4003 2000 2001 -> NÃO
-         * 1000 3 7 -> SIM
-         * 2000 1000 2001  -> SIM
-         * Prof. Daniel Saad Nogueira Nunes– Algoritmos e Programação de Computadores– ABI/LFI/TAISaídaSIMNAOSIMSI
-         */
     }
 
 }
